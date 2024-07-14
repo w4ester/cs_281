@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryland CS Education Framework</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #003366;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8b018 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        .slide {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+        .slide h2 {
+            color: #003366;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: #003366;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: #e8b018;
+        }
+        .standards, .career-roadmap {
+            margin-top: 40px;
+        }
+        .standards h2, .career-roadmap h2 {
+            color: #003366;
+        }
+        .standards ul, .career-roadmap ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .standards li, .career-roadmap li {
+            margin-bottom: 10px;
+        }
+        .career-path {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .career-path h3 {
+            color: #003366;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Maryland CS Education Framework</h1>
+        </div>
+    </header>
+
+    <div class="container content">
+        <div class="slideshow-container">
+            <div class="slide">
+                <h2>Framework Overview</h2>
+                <p>A flexible, AI-integrated Computer Science education framework aligned with Maryland standards and focused on college and career readiness.</p>
+            </div>
+
+            <div class="slide">
+                <h2>Framework Structure</h2>
+                <ul>
+                    <li>Foundation Courses (Years 1-2)</li>
+                    <li>Specialization Tracks (Years 3-4)</li>
+                    <li>AI Integration Throughout</li>
+                    <li>Interdisciplinary Projects</li>
+                </ul>
+            </div>
+
+            <div class="slide">
+                <h2>Alignment with MD Standards</h2>
+                <p>Mapped to Maryland Academic Standards for Computer Science, covering key areas such as Algorithms and Programming, Data Analysis, and Impacts of Computing.</p>
+            </div>
+
+            <div class="slide">
+                <h2>Flexible Learning Pathways</h2>
+                <p>Options for both flex and full-time approaches, allowing personalized learning journeys tailored to student interests and goals.</p>
+            </div>
+
+            <div class="slide">
+                <h2>AI Integration</h2>
+                <p>AI concepts and applications woven throughout the curriculum, preparing students for the future of technology and workforce demands.</p>
+            </div>
+
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        <div class="standards">
+            <h2>Maryland Academic Standards for Computer Science - High School</h2>
+            <ul>
+                <li><strong>10.AP.A.01</strong> Develop prototypes that use algorithms (e.g., sequencing, selection, iteration, recursion, etc.) to solve computational problems by leveraging prior student knowledge and personal interest.</li>
+                <li><strong>12.AP.A.01</strong> Describe how artificial intelligence drives many software and physical systems (e.g., autonomous robots, computer vision, pattern recognition, test analysis).</li>
+                <li><strong>10.AP.A.02 & 12.AP.A.02</strong> Design and implement an algorithm to play a game against a human opponent or solve a problem.</li>
+                <li><strong>12.AP.M.01</strong> Construct solutions to problems using student-created components, such as procedures, modules, and objects to implement abstractions.</li>
+                <li><strong>10.CS.HS.01</strong> Explain and compare levels of abstraction between application software, system software, and hardware layers.</li>
+                <li><strong>12.CS.HS.01</strong> Identify, categorize, and illustrate the roles of operating systems to include memory management, data storage/retrieval, process management, and access control.</li>
+                <li><strong>10.DA.CVT.01</strong> Use software tools to develop interactive data representations that help others to better understand real-world phenomena.</li>
+                <li><strong>12.DA.CVT.01</strong> Use data analysis tools and techniques to identify patterns in data representing complex systems.</li>
+                <li><strong>10.IC.C.01</strong> Evaluate the ways computing impacts personal, ethical, social, economic, and cultural practices.</li>
+                <li><strong>12.IC.C.01</strong> Evaluate the positive and negative implications computational artifacts have on society.</li>
+                <li><strong>10.IC.C.03</strong> Demonstrate and explain how an existing algorithm/computational innovation applies to problems across disciplines.</li>
+                <li><strong>10.NI.C.01</strong> Illustrate how sensitive data and critical infrastructure can be affected by malware and other attacks and recommend security measures to address various scenarios based on factors such as efficiency, feasibility, and ethical impacts.</li>
+                <li><strong>12.NI.C.01</strong> Compare and refine ways software developers protect devices and information from unauthorized access including complex encryption algorithms such as public key encryption.</li>
+                <li><strong>10.AP.PD.01</strong> Systematically design and implement programs for broad audiences, solicit user feedback, and refine programs based on user feedback.</li>
+                <li><strong>12.AP.PD.01</strong> Utilize a software lifecycle process, that considers security, to plan and develop programs for all types of users.</li>
+                <li><strong>12.AP.PD.03</strong> Develop different programs for various computing platforms (e.g., desktop, web, mobile).</li>
+                <li><strong>12.AP.PD.07</strong> Compare multiple programming languages or libraries and discuss how their features make them suitable for solving different types of problems.</li>
+            </ul>
+        </div>
+
+        <div class="career-roadmap">
+            <h2>Career Roadmaps in Computer Science</h2>
+            
+            <div class="career-path">
+                <h3>Software Developer</h3>
+                <p><strong>Career Pathway:</strong> Software Development</p>
+                <p><strong>Connection to CS HS Courses:</strong> Programming fundamentals, data structures, algorithms</p>
+                <p><strong>Median Salary:</strong> $110,140 per year</p>
+            </div>
+
+            <div class="career-path">
+                <h3>Data Scientist</h3>
+                <p><strong>Career Pathway:</strong> Data Science and Analytics</p>
+                <p><strong>Connection to CS HS Courses:</strong> Statistics, machine learning, data visualization</p>
+                <p><strong>Median Salary:</strong> $100,910 per year</p>
+            </div>
+
+            <div class="career-path">
+                <h3>Cybersecurity Analyst</h3>
+                <p><strong>Career Pathway:</strong> Cybersecurity</p>
+                <p><strong>Connection to CS HS Courses:</strong> Network security, encryption, ethical hacking</p>
+                <p><strong>Median Salary:</strong> $103,590 per year</p>
+            </div>
+
+            <div class="career-path">
+                <h3>Artificial Intelligence Engineer</h3>
+                <p><strong>Career Pathway:</strong> AI and Machine Learning</p>
+                <p><strong>Connection to CS HS Courses:</strong> AI fundamentals, machine learning algorithms</p>
+                <p><strong>Median Salary:</strong> $114,121 per year</p>
+            </div>
+
+            <div class="career-path">
+                <h3>Cloud Solutions Architect</h3>
+                <p><strong>Career Pathway:</strong> Cloud Computing</p>
+                <p><strong>Connection to CS HS Courses:</strong> Distributed systems, networking, cloud platforms</p>
+                <p><strong>Median Salary:</strong> $137,243 per year</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
